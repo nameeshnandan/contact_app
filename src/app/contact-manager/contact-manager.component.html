@@ -1,0 +1,48 @@
+<body class="bg-dark">
+    
+<!-- contact heading -->
+<div class="container ">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center text-light mt-4">CONTACT MANAGEMENT SYSTEM</h1>
+            <p style="font-family: 'Montserrat', sans-serif;" class="text text-light mt-4" style="text-align: justify; ">Contact management, a digital method of storing data, can help you grow and diversify your customer base. As your business grows, it will get more challenging to collect data and determine which information is valuable to you, your employees and your company’s sustainability. </p>
+            <a routerLink="/contact/add" style="float: right;" class="btn border border-2 border-warning text-light m-5 me-5"><i class="fa-solid fa-user-plus lg"></i> ADD CONTACT</a>
+        </div>
+    </div>
+
+    <!-- string interpolation  -->
+    <!-- <h4 class="text-light">{{heading}}</h4>  -->
+    <!-- {{allContacts|json}} -->
+    <!-- contact search  -->
+    <div class="row">
+        <div class="col-6">
+            <input (keyup)="search($event)" type="text" placeholder="Search your contact" class="form-control mb-5 border border-2 border-warning bg-dark text-light">
+        </div>
+    </div>
+
+    <!-- contact cards   -->
+    <div class="row">
+        <div class="col-6 mb-5 " *ngFor="let contact of allContacts | filter:searchKey:'name'">
+            <div class="card border border-0 border-warning">
+                <div class="card-body border border-2 border-warning rounded-2 bg-dark">
+                    <div class="row">
+                        <div class="col-5">
+                            <img class="border border-2 border-light " [src]="contact.photo" alt="" style="width: 200px; height: 200px; border-radius: 50%;">
+
+                        </div>
+                        <div class="col-6 " style="display: flex; justify-content: center; align-items: center;">
+                            <ul class="list-group ">
+                                <li class="list-group-item bg-dark text-light border border-1 border-light" >Name : {{contact.name}} <a routerLink="/contact/view/{{contact.id}}"> <i class="fa fa-eye" style="color: #e5e7ebb4; float: right;"></i></a></li>
+                                <li class="list-group-item bg-dark text-light border border-1 border-light">Mobile : {{contact.phone}} <a routerLink="/contact/update/{{contact.id}}"><i class="fa fa-pencil" style="color: #e5e7ebc4; float: right;"></i></a></li>
+                                <li class="list-group-item bg-dark text-light border border-1 border-light">Email : {{contact.email}} <a (click)="deleteContact(contact.id)"><i class="fa fa-trash icons" style="color: #e5e7ebc0 ; float: right; " ></i></a> </li>
+                                <!-- <li class="list-group-item">A fourth item</li>
+                                <li class="list-group-item">And a fifth one</li> -->
+                              </ul>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+</body>

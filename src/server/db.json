@@ -1,0 +1,88 @@
+{
+  "contacts": [
+    {
+      "id": "c3",
+      "name": "Sneha",
+      "phone": "7523650184",
+      "email": "sneha2001@gmail.com",
+      "photo": "https://thumbs.dreamstime.com/b/young-woman-avatar-cartoon-character-profile-picture-young-woman-wearing-blue-t-shirt-bandana-avatar-cartoon-character-149672072.jpg",
+      "company": "TCS company",
+      "title": "Software Engineer",
+      "groupId": "1"
+    },
+    {
+      "id": "c2",
+      "name": "Nameesh",
+      "phone": "9526551450",
+      "email": "nameesh2334@gmail.com",
+      "photo": "https://thumbs.dreamstime.com/b/businessman-profile-icon-male-portrait-flat-design-vector-illustration-47075627.jpg",
+      "company": "NNB company",
+      "title": "Software Engineer",
+      "groupId": "3"
+    },
+    {
+      "id": "c1",
+      "name": "Manu",
+      "phone": "9856321450",
+      "email": "manu456@gmail.com",
+      "photo": "https://tse1.mm.bing.net/th?id=OIP.elzAzVV8qRRIzIxwrd3FVgHaHa&pid=Api&P=0",
+      "company": "WWI company",
+      "title": "Software tester",
+      "groupId": "2"
+    },
+    {
+      "id": "c4",
+      "name": "Rahul",
+      "phone": "6548752350",
+      "email": "rahulrahul@gmail.com",
+      "photo": "https://thumbs.dreamstime.com/b/business-man-profile-icon-male-avatar-hipster-style-fashion-cartoon-guy-beard-portrait-casual-businessman-person-face-flat-design-69046219.jpg",
+      "company": "SOCS company",
+      "title": "Data Scientist",
+      "groupId": "3"
+    },
+    {
+      "id": "c5",
+      "name": "Ram",
+      "phone": "6235698476",
+      "email": "Ram456gmail.com",
+      "photo": "https://i.pinimg.com/originals/6d/5f/c6/6d5fc60bae3dc6139eefa31af206596f.jpg",
+      "company": "KGF company",
+      "title": "Data Analyst",
+      "groupId": "1"
+    },
+    {
+      "id": "c6",
+      "name": "Lina",
+      "phone": "6598748476",
+      "email": "LinaRamgmail.com",
+      "photo": "https://st3.depositphotos.com/1007566/13310/v/450/depositphotos_133109734-stock-illustration-young-woman-profile-with-dark.jpg",
+      "company": "KKR company",
+      "title": "Data Analyst",
+      "groupId": "2"
+    },
+    {
+      "groupId": "2",
+      "id": "45",
+      "name": "knkd",
+      "photo": "fgf",
+      "phone": 6238819398,
+      "email": "nameeshnandan222@gmail.com",
+      "company": "dhgfgf",
+      "title": "dsfdg"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "family"
+    },
+    {
+      "id": "2",
+      "name": "friends"
+    },
+    {
+      "id": "3",
+      "name": "company"
+    }
+  ]
+}

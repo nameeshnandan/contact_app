@@ -1,0 +1,70 @@
+<body class="bg-dark">
+    
+    <!-- add contact intro -->
+    <div class="container ">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center text-light mt-4 ">UPDATE YOUR CONTACT<i class="fa fa-pencil  mt-4"></i></h1>
+                <p style="font-family: 'Montserrat', sans-serif;" class="text text-light mt-4" style="text-align: justify; ">Contact management, a digital method of storing data, can help you grow and diversify your customer base. As your business grows, it will get more challenging to collect data and determine which information is valuable to you, your employees and your company’s sustainability. </p>
+                <!-- <a routerLink="/contact/add" style="float: right;" class="btn border border-2 border-warning text-light m-5 me-5"><i class="fa-solid fa-user-plus lg"></i> ADD CONTACT</a> -->
+            </div>
+        </div>
+        <!-- <pre class="text-light">
+          {{contact|json}}
+        </pre> -->
+        <!-- adding contact section  -->
+        <div class="row mt-5">
+            <!-- form  -->
+            <div class="col-6 border border-1 border-warning rounded-4 p-5">
+                <h3 style="font-family: 'Montserrat', sans-serif;" class="text-light text-center mb-4">Add Conatct Detalis Here</h3>
+                <form>
+                    <div class="form-floating mb-3">
+                        <input  type="text" [(ngModel)]="contact.id" name="contactId" class="form-control" id="floatingInput" placeholder="Conatct ID">
+                        <label for="floatingInput">Contact ID</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" [(ngModel)]="contact.name" name="contact Name" class="form-control" id="floatingPassword" placeholder="Name">
+                        <label for="floatingPassword">Name</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input [(ngModel)]="contact.photo" name="contact Photo" type="text" class="form-control" id="floatingPassword" placeholder="Photo URL">
+                        <label for="floatingPassword">Photo URL</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="number" [(ngModel)]="contact.phone" name="contact Phone" class="form-control" id="floatingPassword" placeholder="Mobile Number">
+                        <label for="floatingPassword">Mobile Number</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="email" [(ngModel)]="contact.email" name="contact Email" class="form-control" id="floatingPassword" placeholder="Email Address">
+                        <label for="floatingPassword">Email Address</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" [(ngModel)]="contact.company" name="contact Company"class="form-control" id="floatingPassword" placeholder="Company Name">
+                        <label for="floatingPassword">Company Name</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" [(ngModel)]="contact.title" name="contact Title" class="form-control" id="floatingPassword" placeholder="Title ">
+                        <label for="floatingPassword">Title</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <select [(ngModel)]="contact.groupId" name="groupId" class="form-control">
+                            <option  selected hidden disabled>Select Group</option>
+                            <option [value]="group.id" *ngFor="let group of groups" >{{group.name}}</option>
+                        </select>
+                      </div>
+                      <button routerLink="" class="btn btn-danger ms-5">Close</button>
+                      <button (click)="updateContact()" class=" btn btn-success me-5" style="float: right;"> Add Conatct</button>
+                </form>
+            </div>
+
+            <!-- img  -->
+            <div class="col-6" style="display: flex; justify-content: center; align-items: center;">
+                <div style="width: 500px; height: 500px; display: flex; justify-content: center; align-items: center;" class="image border border-1 border-warning rounded-4">
+                    <img class="rounded-5"  style="width: 450px; height: 450px;" [src]="contact.photo">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
